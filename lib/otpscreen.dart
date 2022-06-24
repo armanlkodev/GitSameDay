@@ -55,7 +55,7 @@ class _OtpScreenState extends State<OtpScreen> {
                         elevation: 7.0,
                         child:  TextButton(
                           onPressed:  () {
-                            Navigator.pushNamed(context,'setting');
+                            Navigator.pushNamed(context,'dashboard');
                           },
                           child: const Center(
                             child: Text(

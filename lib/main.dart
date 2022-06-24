@@ -13,9 +13,12 @@ import 'homepage.dart';
 import 'login.dart';
 import 'loginhome.dart';
 import 'otpscreen.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+
 
 void main() {
-  runApp(MaterialApp(
+  runApp(
+      MaterialApp(
     debugShowCheckedModeBanner: false,
     home: SplashScreen(),
     routes: {
@@ -37,5 +40,26 @@ void main() {
   );
 
 
+}
 
+class MainPage extends StatefulWidget {
+  @override
+  _MainPageState createState() => _MainPageState();
+}
+
+class _MainPageState extends State<MainPage> {
+
+
+  @override
+  void initState() {
+    super.initState();
+
+  }
+
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+    );
+  }
 }

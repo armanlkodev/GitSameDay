@@ -1,4 +1,11 @@
+import 'dart:io';
+import 'package:http/http.dart' as http;
+import 'dart:convert';
+import 'dart:core';
 import 'package:flutter/material.dart';
+import 'package:samedaypro/page/dashboard.dart';
+
+
 
 class MyRegister extends StatefulWidget {
   const MyRegister({Key? key}) : super(key: key);
@@ -8,6 +15,8 @@ class MyRegister extends StatefulWidget {
 }
 
 class _MyRegisterState extends State<MyRegister> {
+
+  bool showPassword = false;
   @override
   Widget build(BuildContext context) {
     return Container(
